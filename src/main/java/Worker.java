@@ -1,39 +1,30 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Worker {
     int id;
     String firstName;
     String secondName;
-    ArrayList<Product> menu = new ArrayList();
+    Map<Product, Integer> menu = new HashMap<Product, Integer>();
     public Worker() {
     }
-    public Worker(String f_name,String s_name, Product pruduct_name){
+    public Worker(String f_name,String s_name, Product product_name){
         this.firstName = f_name;
         this.secondName = s_name;
-        menu.add(pruduct_name);
         id++;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Worker worker = (Worker) o;
-
-        if (id != worker.id) return false;
-        if (!firstName.equals(worker.firstName)) return false;
-        if (!secondName.equals(worker.secondName)) return false;
-        return !(menu != null ? !menu.equals(worker.menu) : worker.menu != null);
+        if(chek_servings(product_name)){
+            menu.put(product_name, menu.get(product_name) + 1);
+        }
+        else menu.put(product_name, 1);
 
     }
 
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + firstName.hashCode();
-        result = 31 * result + secondName.hashCode();
-        result = 31 * result + (menu != null ? menu.hashCode() : 0);
-        return result;
+    public boolean chek_servings(Product product_name){
+        for (Map.Entry<Product, Integer> iterator : menu.entrySet()){
+            if (iterator.getKey().equals(product_name)) return true;
+        }
+        return false;
     }
+
 }
