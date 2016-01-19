@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,5 +25,7 @@ public class Worker {
         }
         return false;
     }
+    public void data(){
 
+    }
 }
