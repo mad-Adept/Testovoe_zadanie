@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "А.",
+    "secondName": "Пупкин",
+    "menu": {
+      "Product{name -Рулет с изюмом\u0027, weight-75, price-15, name_products-[Рулет с изюмом]}": 1,
+      "Product{name -Рис отварной с маслом\u0027, weight-170, price-16, name_products-[Рис отварной с маслом]}": 1,
+      "Product{name -Салат изюменка\u0027, weight-100, price-35, name_products-[Салат изюменка]}": 1,
+      "Product{name -Печень по королевски\u0027, weight-150, price-54, name_products-[Печень по королевски]}": 1
+    }
+  },
+  {
+    "firstName": "С.",
+    "secondName": "Кривенко",
+    "menu": {
+      "Product{name -Макароны отварные\u0027, weight-170, price-15, name_products-[Макароны отварные]}": 1,
+      "Product{name -Пирог с яблоками\u0027, weight-60, price-13, name_products-[Пирог с яблоками]}": 1,
+      "Product{name -Салат лукошко\u0027, weight-100, price-40, name_products-[Салат лукошко]}": 1,
+      "Product{name -Суп куриный с грибами\u0027, weight-250, price-34, name_products-[Суп куриный с грибами]}": 1,
+      "Product{name -Свинина запеченная \"По-гусарски\"\u0027, weight-80, price-68, name_products-[Свинина запеченная \"По-гусарски\"]}": 1
+    }
+  },
+  {
+    "firstName": "П.",
+    "secondName": "Гайченов",
+    "menu": {
+      "Product{name -Суп болгарский вегетарианский\u0027, weight-250, price-21, name_products-[Суп болгарский вегетарианский]}": 1,
+      "Product{name -Пирог с повидлом\u0027, weight-60, price-13, name_products-[Пирог с повидлом]}": 1,
+      "Product{name -Рулет с изюмом\u0027, weight-75, price-15, name_products-[Рулет с изюмом]}": 1,
+      "Product{name -Рыбное филе с помидоркой\u0027, weight-80, price-54, name_products-[Рыбное филе с помидоркой]}": 1
+    }
+  },
+  {
+    "firstName": "Л.",
+    "secondName": "Сухожилов",
+    "menu": {
+      "Product{name -Макароны отварные\u0027, weight-170, price-15, name_products-[Макароны отварные]}": 1,
+      "Product{name -Пирог с повидлом\u0027, weight-60, price-13, name_products-[Пирог с повидлом]}": 1,
+      "Product{name -Салат изюменка\u0027, weight-100, price-35, name_products-[Салат изюменка]}": 1,
+      "Product{name -Печень по королевски\u0027, weight-150, price-54, name_products-[Печень по королевски]}": 1,
+      "Product{name -Суп куриный с грибами\u0027, weight-250, price-34, name_products-[Суп куриный с грибами]}": 1
+    }
+  }
+]

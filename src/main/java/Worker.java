@@ -69,5 +69,14 @@ public class Worker {
         result = 31 * result + menu.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", menu=" + menu +
+                '}';
+    }
 }
 

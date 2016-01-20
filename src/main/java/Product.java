@@ -80,4 +80,14 @@ public class Product {
         result = 31 * result + name_products.hashCode();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", price=" + price +
+                ", name_products=" + name_products +
+                '}';
+    }
 }

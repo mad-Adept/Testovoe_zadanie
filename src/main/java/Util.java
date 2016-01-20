@@ -6,27 +6,18 @@ import java.util.ArrayList;
 
 public class Util {
 
-    final static String PATH = "src\\main\\resources";
+    final static String PATH = "src\\main\\resources\\";
 
     public ArrayList<Worker> getData_Worker() {
-        Gson gson = new Gson();
-        ArrayList<Worker> worker_list = null;
-        File f = new File(PATH + "worker.json");
-        FileReader reader = null;
-        try {
-            reader = new FileReader(f);
-        } catch (FileNotFoundException e) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        ArrayList<Worker> worker_list = new ArrayList();
+        try{
+            BufferedReader buffer = new BufferedReader(new FileReader(PATH + "worker.json"));
+            worker_list = gson.fromJson(buffer, ArrayList.class);
+        }catch (IOException e){
             e.printStackTrace();
-            System.out.println("Исключение, создания перменной reader, для пути: src\\main\\resources\\worker.json");
+            System.out.println("Исключение");
         }
-        char[] buffer = new char[(int) f.length()];
-        try {
-            reader.read(buffer);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("Исключение, чтения файла в массив buffer, для метода getData_Worker");
-        }
-        worker_list = gson.fromJson(new String(buffer), ArrayList.class);
         return worker_list;
     }
 

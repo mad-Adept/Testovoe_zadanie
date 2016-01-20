@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "А.",
+    "secondName": "Пупкин",
+    "menu": {
+      "Product{name\u003d\u0027Рулет с изюмом\u0027, weight\u003d75, price\u003d15, name_products\u003d[Рулет с изюмом]}": 1,
+      "Product{name\u003d\u0027Рис отварной с маслом\u0027, weight\u003d170, price\u003d16, name_products\u003d[Рис отварной с маслом]}": 1,
+      "Product{name\u003d\u0027Салат изюменка\u0027, weight\u003d100, price\u003d35, name_products\u003d[Салат изюменка]}": 1,
+      "Product{name\u003d\u0027Печень по королевски\u0027, weight\u003d150, price\u003d54, name_products\u003d[Печень по королевски]}": 1
+    }
+  },
+  {
+    "firstName": "С.",
+    "secondName": "Кривенко",
+    "menu": {
+      "Product{name\u003d\u0027Макароны отварные\u0027, weight\u003d170, price\u003d15, name_products\u003d[Макароны отварные]}": 1,
+      "Product{name\u003d\u0027Пирог с яблоками\u0027, weight\u003d60, price\u003d13, name_products\u003d[Пирог с яблоками]}": 1,
+      "Product{name\u003d\u0027Салат лукошко\u0027, weight\u003d100, price\u003d40, name_products\u003d[Салат лукошко]}": 1,
+      "Product{name\u003d\u0027Суп куриный с грибами\u0027, weight\u003d250, price\u003d34, name_products\u003d[Суп куриный с грибами]}": 1,
+      "Product{name\u003d\u0027Свинина запеченная \"По-гусарски\"\u0027, weight\u003d80, price\u003d68, name_products\u003d[Свинина запеченная \"По-гусарски\"]}": 1
+    }
+  },
+  {
+    "firstName": "П.",
+    "secondName": "Гайченов",
+    "menu": {
+      "Product{name\u003d\u0027Суп болгарский вегетарианский\u0027, weight\u003d250, price\u003d21, name_products\u003d[Суп болгарский вегетарианский]}": 1,
+      "Product{name\u003d\u0027Пирог с повидлом\u0027, weight\u003d60, price\u003d13, name_products\u003d[Пирог с повидлом]}": 1,
+      "Product{name\u003d\u0027Рулет с изюмом\u0027, weight\u003d75, price\u003d15, name_products\u003d[Рулет с изюмом]}": 1,
+      "Product{name\u003d\u0027Рыбное филе с помидоркой\u0027, weight\u003d80, price\u003d54, name_products\u003d[Рыбное филе с помидоркой]}": 1
+    }
+  },
+  {
+    "firstName": "Л.",
+    "secondName": "Сухожилов",
+    "menu": {
+      "Product{name\u003d\u0027Макароны отварные\u0027, weight\u003d170, price\u003d15, name_products\u003d[Макароны отварные]}": 1,
+      "Product{name\u003d\u0027Пирог с повидлом\u0027, weight\u003d60, price\u003d13, name_products\u003d[Пирог с повидлом]}": 1,
+      "Product{name\u003d\u0027Салат изюменка\u0027, weight\u003d100, price\u003d35, name_products\u003d[Салат изюменка]}": 1,
+      "Product{name\u003d\u0027Печень по королевски\u0027, weight\u003d150, price\u003d54, name_products\u003d[Печень по королевски]}": 1,
+      "Product{name\u003d\u0027Суп куриный с грибами\u0027, weight\u003d250, price\u003d34, name_products\u003d[Суп куриный с грибами]}": 1
+    }
+  }
+]
