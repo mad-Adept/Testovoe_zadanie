@@ -1,9 +1,13 @@
 import java.util.ArrayList;
 
 public class Order {
-    ArrayList<Worker> workers = new ArrayList();
 
-    public void placed_orders(){
+        public void printPlacedOrder(){
+            ArrayList<Worker> workers_list = new Util().getData_Worker();
 
+        }
+        public  void printReceivedOrder(){
+
+        }
     }
-}
+
