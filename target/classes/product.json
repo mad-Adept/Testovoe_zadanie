@@ -3,7 +3,7 @@
     "name": "Рулет с изюмом",
     "weight": 75,
     "price": 15,
-    "name_products": [
+    "list_products": [
       "Рулет с изюмом"
     ]
   },
@@ -11,7 +11,7 @@
     "name": "Пирог с повидлом",
     "weight": 60,
     "price": 13,
-    "name_products": [
+    "list_products": [
       "Пирог с повидлом"
     ]
   },
@@ -19,7 +19,7 @@
     "name": "Пирог с яблоками",
     "weight": 60,
     "price": 13,
-    "name_products": [
+    "list_products": [
       "Пирог с яблоками"
     ]
   },
@@ -27,7 +27,7 @@
     "name": "Салат изюменка",
     "weight": 100,
     "price": 35,
-    "name_products": [
+    "list_products": [
       "Салат изюменка"
     ]
   },
@@ -35,7 +35,7 @@
     "name": "Салат лукошко",
     "weight": 100,
     "price": 40,
-    "name_products": [
+    "list_products": [
       "Салат лукошко"
     ]
   },
@@ -43,7 +43,7 @@
     "name": "Салат капустный с помидором",
     "weight": 100,
     "price": 19,
-    "name_products": [
+    "list_products": [
       "Салат капустный с помидором"
     ]
   },
@@ -51,7 +51,7 @@
     "name": "Суп харчо с говядиной",
     "weight": 250,
     "price": 31,
-    "name_products": [
+    "list_products": [
       "Суп харчо с говядиной"
     ]
   },
@@ -59,7 +59,7 @@
     "name": "Суп куриный с грибами",
     "weight": 250,
     "price": 34,
-    "name_products": [
+    "list_products": [
       "Суп куриный с грибами"
     ]
   },
@@ -67,7 +67,7 @@
     "name": "Суп болгарский вегетарианский",
     "weight": 250,
     "price": 21,
-    "name_products": [
+    "list_products": [
       "Суп болгарский вегетарианский"
     ]
   },
@@ -75,7 +75,7 @@
     "name": "Рыбное филе с помидоркой",
     "weight": 80,
     "price": 54,
-    "name_products": [
+    "list_products": [
       "Рыбное филе с помидоркой"
     ]
   },
@@ -83,7 +83,7 @@
     "name": "Печень по королевски",
     "weight": 150,
     "price": 54,
-    "name_products": [
+    "list_products": [
       "Печень по королевски"
     ]
   },
@@ -91,7 +91,7 @@
     "name": "Свинина запеченная \"По-гусарски\"",
     "weight": 80,
     "price": 68,
-    "name_products": [
+    "list_products": [
       "Свинина запеченная \"По-гусарски\""
     ]
   },
@@ -99,7 +99,7 @@
     "name": "Греча с маслом",
     "weight": 170,
     "price": 17,
-    "name_products": [
+    "list_products": [
       "Греча с маслом"
     ]
   },
@@ -107,7 +107,7 @@
     "name": "Макароны отварные",
     "weight": 170,
     "price": 15,
-    "name_products": [
+    "list_products": [
       "Макароны отварные"
     ]
   },
@@ -115,7 +115,7 @@
     "name": "Рис отварной с маслом",
     "weight": 170,
     "price": 16,
-    "name_products": [
+    "list_products": [
       "Рис отварной с маслом"
     ]
   }

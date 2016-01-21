@@ -6,33 +6,24 @@ import java.util.ArrayList;
 
 public class Util {
 
-    final static String PATH = "src\\main\\resources";
+    private final static String PATH = "src\\main\\resources\\";
 
     public ArrayList<Worker> getData_Worker() {
         Gson gson = new Gson();
-        ArrayList<Worker> worker_list = null;
-        File f = new File(PATH + "worker.json");
-        FileReader reader = null;
-        try {
-            reader = new FileReader(f);
-        } catch (FileNotFoundException e) {
+        ArrayList<Worker> worker_list = new ArrayList();
+        try{
+            BufferedReader buffer = new BufferedReader(new FileReader(PATH + "worker.json"));
+            worker_list = gson.fromJson(buffer, ArrayList.class);
+        }catch (IOException e){
             e.printStackTrace();
-            System.out.println("Исключение, создания перменной reader, для пути: src\\main\\resources\\worker.json");
+            System.out.println("Исключение, чтения файла из метода getData_Worker(), для пути src\\main\\resources\\worker.json");
         }
-        char[] buffer = new char[(int) f.length()];
-        try {
-            reader.read(buffer);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("Исключение, чтения файла в массив buffer, для метода getData_Worker");
-        }
-        worker_list = gson.fromJson(new String(buffer), ArrayList.class);
         return worker_list;
     }
 
     public void setData_Worker(ArrayList<Worker> worker_list) {
         try {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
             FileWriter writer = new FileWriter(PATH + "worker.json");
             writer.write(gson.toJson(worker_list));
             writer.close();
@@ -44,29 +35,20 @@ public class Util {
 
     public ArrayList<Product> getData_Product() {
         Gson gson = new Gson();
-        ArrayList<Product> worker_list = null;
-        File f = new File(PATH + "product.json");
-        FileReader reader = null;
-        try {
-            reader = new FileReader(f);
-        } catch (FileNotFoundException e) {
+        ArrayList<Product> products_list = null;
+        try{
+            BufferedReader buffer = new BufferedReader(new FileReader(PATH + "worker.json"));
+            products_list = gson.fromJson(buffer, ArrayList.class);
+        }catch (IOException e){
             e.printStackTrace();
-            System.out.println("Исключение, создания перменной reader, для пути: src\\main\\resources\\product.json");
+            System.out.println("Исключение, чтения файла из метода getData_Product(), для пути src\\main\\resources\\product.json");
         }
-        char[] buffer = new char[(int) f.length()];
-        try {
-            reader.read(buffer);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("Исключение, чтения файла в массив buffer, getData_Product");
-        }
-        worker_list = gson.fromJson(new String(buffer), ArrayList.class);
-        return worker_list;
+        return products_list;
     }
 
     public void setData_Product(ArrayList<Product> product_list) {
         try {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
             FileWriter writer = new FileWriter(PATH + "product.json");
             writer.write(gson.toJson(product_list));
             writer.close();

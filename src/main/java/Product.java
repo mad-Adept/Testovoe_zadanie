@@ -1,26 +1,26 @@
 import java.util.ArrayList;
 
 public class Product {
-    String name;
-    int weight;
-    int price;
-    ArrayList<String> name_products = new ArrayList();
+    private String name;
+    private int weight;
+    private int price;
+    private static ArrayList<String> namelist_products = new ArrayList();
 
     public Product() {
     }
 
     public Product(String name, int weight, int price) {
         if (check_name(name)){
-            System.out.println("Product name already exists!");
+            System.out.println("Product: " + name +  ", name already exists!");
         }
         this.name = name;
         this.weight = weight;
         this.price = price;
-        name_products.add(name);
+        namelist_products.add(name);
     }
 
     public boolean check_name (String name){
-        for (String iterator : name_products){
+        for (String iterator : namelist_products){
             if (iterator.equals(name)) return true;
         }
         return false;
@@ -50,12 +50,12 @@ public class Product {
         this.name = name;
     }
 
-    public ArrayList<String> getName_products() {
-        return name_products;
+    public ArrayList<String> getList_products() {
+        return namelist_products;
     }
 
-    public void setName_products(ArrayList<String> name_products) {
-        this.name_products = name_products;
+    public void setList_products(ArrayList<String> list_products) {
+        this.namelist_products = list_products;
     }
 
     @Override
@@ -68,7 +68,7 @@ public class Product {
         if (weight != product.weight) return false;
         if (price != product.price) return false;
         if (!name.equals(product.name)) return false;
-        return name_products.equals(product.name_products);
+        return namelist_products.equals(product.namelist_products);
 
     }
 
@@ -77,7 +77,17 @@ public class Product {
         int result = name.hashCode();
         result = 31 * result + weight;
         result = 31 * result + price;
-        result = 31 * result + name_products.hashCode();
+        result = 31 * result + namelist_products.hashCode();
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", price=" + price +
+                ", namelist_products=" + namelist_products +
+                '}';
     }
 }

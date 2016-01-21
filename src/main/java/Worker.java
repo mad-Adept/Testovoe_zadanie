@@ -2,12 +2,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Worker {
-    String firstName;
-    String secondName;
-    Map<Product, Integer> menu = new HashMap<Product, Integer>();
+    private String firstName;
+    private String secondName;
+    private Map<Product, Integer> menu = new HashMap<Product, Integer>();
+
     public Worker() {
     }
-    public Worker(String f_name,String s_name){
+    public Worker(String f_name, String s_name){
         this.firstName = f_name;
         this.secondName = s_name;
     }
@@ -68,6 +69,15 @@ public class Worker {
         result = 31 * result + secondName.hashCode();
         result = 31 * result + menu.hashCode();
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", menu=" + menu +
+                '}';
     }
 }
 
