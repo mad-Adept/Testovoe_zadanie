@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Collections;
 
 public class Data {
@@ -46,17 +46,17 @@ public class Data {
         suhojilov.add_Product(makarony_otvarnye);
         suhojilov.add_Product(pirog_s_povidlom);
 
-        ArrayList<Worker> workers_list = new ArrayList<Worker>();
-        Collections.addAll(workers_list, pupkin, krivenko, gaychenov, suhojilov);
-        new Util().setData_Worker(workers_list);
+    ArrayList<Worker> workers_list = new ArrayList<Worker>();
+    Collections.addAll(workers_list, pupkin, krivenko, gaychenov, suhojilov);
+    new Util().setData_Worker(workers_list);
 
-        ArrayList<Product> products_list = new ArrayList<Product>();
-        Collections.addAll(products_list, rulet_s_izumom, pirog_s_povidlom, pirog_s_yablokami, salat_izumenka,
-                salat_lukoshko, salat_kopustniy_s_pomidorom, sup_harcho_s_govyadinoy, sup_kuriniy_s_gribami,
-                sup_bolgarskiy_vegetarianskiy, ribnoe_file_s_pomidorkoy, pechen_po_korolevski,
-                svinina_zapechenaya, grecha_s_maslom, makarony_otvarnye, ris_otvarnoy_s_maslom);
-        new Util().setData_Product(products_list);
+    ArrayList<Product> products_list = new ArrayList<Product>();
+    Collections.addAll(products_list, rulet_s_izumom, pirog_s_povidlom, pirog_s_yablokami, salat_izumenka,
+    salat_lukoshko, salat_kopustniy_s_pomidorom, sup_harcho_s_govyadinoy, sup_kuriniy_s_gribami,
+    sup_bolgarskiy_vegetarianskiy, ribnoe_file_s_pomidorkoy, pechen_po_korolevski,
+    svinina_zapechenaya, grecha_s_maslom, makarony_otvarnye, ris_otvarnoy_s_maslom);
+    new Util().setData_Product(products_list);
 
     }
 
-}
+}*/
